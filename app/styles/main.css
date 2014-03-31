@@ -34,7 +34,7 @@ body {
 
 /* Custom page footer */
 .footer {
-    margin-top: 15px;
+    margin-top: 30px;
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
@@ -164,28 +164,17 @@ body {
 
 .puzzle-ok{
     background-color: #3A7CF0;
-    z-index: 1000;
+    z-index: 10;
     opacity: .5;
     border-radius: 5px;
-    -webkit-animation: puzzle-ok 1s;
     animation: puzzle-ok 1s;
 }
 
-@-webkit-keyframes puzzle-ok{
-    from{
-        -webkit-transform : scale(2);
-        opacity: 1;
-    }
-    to{
-        -webkit-transform : scale(1);
-        opacity: :;
-    }
-}
 @keyframes puzzle-ok{
     from{
-        -webkit-transform : scale(2);
+        transform : scale(2);
     }
     to{
-        -webkit-transform : scale(1);
+        transform : scale(1);
     }
 }

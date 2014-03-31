@@ -92,7 +92,8 @@ window.Puzzle = (function (){
             containment : self.el.$gameBoard,
             snap: ".destination-item",
             snapMode: "inner",
-            snapTolerance: 100
+            snapTolerance: 100,
+            cursor: "move"
         });
       }
 

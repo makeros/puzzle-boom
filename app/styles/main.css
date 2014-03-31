@@ -119,6 +119,7 @@ body {
     position:absolute;
     background-color: yellow;
     z-index: 500;
+    cursor: pointer;
 }
 .destination-item{
     background-color: white;

@@ -1,0 +1,191 @@
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    margin-top: 15px;
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+.container2{
+    margin:auto;
+    width: 80%;
+}
+.game-board{
+    width:1000px;
+    margin: auto;
+}
+.red-container{
+    background-color: #F03A3A;
+    height: 500px;
+    width:500px;
+    position:relative;
+}
+.blue-container{
+    position: relative;
+    line-height: 0;
+    width:500px;
+    height: 500px;
+    background-color: #f3f3f3;
+}
+
+.head-title{
+    color: #56C74A;
+}
+
+.puzzle{
+    display:inline-block;
+    position:absolute;
+    background-color: yellow;
+    z-index: 500;
+}
+.destination-item{
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border:1px solid #3A7CF0;
+    display: inline-block;
+    margin:5px;
+}
+.done-window{
+    top: 13%;
+    margin: auto;
+    width: 500px;
+    text-align: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    left: 30%;
+    /*height: 250px;*/
+    color: white;
+    z-index: 1000;
+    border-radius: 8px;
+}
+.done-window h1 {
+    font-size: 76px;
+}
+.done-window .play-again{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.done-window .play-again a {
+    display: block;
+    font-weight: bold;
+    padding: 15px;
+    background-color: orange;
+    width: 150px;
+    margin: auto;
+    border-radius: 8px;
+
+}
+.done-window .play-again a:hover{
+    background-color: red;
+    
+}
+
+.puzzle-ok{
+    background-color: #3A7CF0;
+    z-index: 1000;
+    opacity: .5;
+    border-radius: 5px;
+    -webkit-animation: puzzle-ok 1s;
+    animation: puzzle-ok 1s;
+}
+
+@-webkit-keyframes puzzle-ok{
+    from{
+        -webkit-transform : scale(2);
+        opacity: 1;
+    }
+    to{
+        -webkit-transform : scale(1);
+        opacity: :;
+    }
+}
+@keyframes puzzle-ok{
+    from{
+        -webkit-transform : scale(2);
+    }
+    to{
+        -webkit-transform : scale(1);
+    }
+}
